@@ -39,10 +39,11 @@ int main(){
 	double x, y, z, Ea, Er, Ep;
 	printf("Enter the X: ");
 	scanf("%lf", &x);
+	
 	y=truncate(x);
-	printf("Enter the X'(Truncate): %lf\n", y);
+	printf("X'(Truncate): %lf\n", y);
 	z=round_off(x);
-	printf("Enter the X'(Round Off): %lf\n", z);
+	printf("X'(Round Off): %lf\n", z);
 	Ea=x-y;
 	if(Ea<0){
 		Ea=-Ea;
