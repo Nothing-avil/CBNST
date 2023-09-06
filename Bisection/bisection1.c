@@ -9,10 +9,10 @@ int i=0;
 void bisection(double a, double b){
     double m=(a+b)/2.0;
     double r=  f(m);
-    printf("The Roots are %lf  , %lf  and the  values of x is %lf  , %lf \n", a, b, m,r);
+    printf("The Roots are %lf  , %lf  and the  values of x, f(x) are %lf  , %lf \n", a, b, m,r);
     i++;
     
-    if(m-a<=0.0009 || b-m<=0.0009){
+    if(m-a<=0.0001 || b-m<=0.0001){
         printf("\n\nThe root of given Equation is -  %f \n", m);
         printf("Steps are - %d \n", i);
         return;
