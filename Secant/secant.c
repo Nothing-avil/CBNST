@@ -6,7 +6,7 @@ double f(double x){
 
 int i=0;
 
-void bisection(double a, double b){
+void secant(double a, double b){
     double m= b- ((b-a)/(f(b)-f(a)))*f(b);
     double r=  f(m);
     printf("The Roots are %lf  , %lf  and the  values of x, f(x) are %lf  , %lf \n", a, b, m,r);
@@ -19,10 +19,10 @@ void bisection(double a, double b){
     }
     
     if(f(a)*f(m)<0){
-        bisection(a,m);
+        secant(a,m);
     }
     else if(f(m)*f(b)<0){
-        bisection(m,b);
+        secant(m,b);
     }
 }
 
@@ -46,6 +46,6 @@ int main()
             printf("Invalid Roots ,Please Enter Correct values.\n");
         }
     }while(z);
-    bisection(a,b);
+    secant(a,b);
     return 0;
 }
