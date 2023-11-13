@@ -13,7 +13,7 @@ E --> S([STOP])
 
 x[["Bisection (a,b)"]]--> Q["mid=(a+b)/2"]
 Q--> Z[/"Print a, b and f(mid)"/]
-Z--> P{"Check if <br/> m-a = err <br/> || <br/> b-m = err <br/> ?"}
+Z--> P{"Check if <br/> mid-a = err <br/> || <br/> b-mid = err <br/> ?"}
 P--"NO"--> W{"Check if  <br/> f(a)*f(mid) <0 <br/> ?"}
 P--"YES"--> l[/"Print root = mid"/] --> a[/"Print steps i"/]--> d[return]
 W--"NO"-->c["a=mid"]-->Q
