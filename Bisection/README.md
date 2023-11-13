@@ -1,4 +1,4 @@
-# Bisection Flowchart
+# Bisection 
 
 ```mermaid
 flowchart TD
