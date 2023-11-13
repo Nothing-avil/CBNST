@@ -11,7 +11,7 @@ D --"NO"-->F[Enter Correct Root]
 F --> C
 E --> S([STOP])
 
-x[["Bisection (a,b)"]]--> Q["mid=(a+b)/2"]
+x[["Bisection (a,b)"]]--> Q["mid=(a+b)/2 <br/><br/> i++"]
 Q--> Z[/"Print a, b and f(mid)"/]
 Z--> P{"Check if <br/> mid-a = err <br/> || <br/> b-mid = err <br/> ?"}
 P--"NO"--> W{"Check if  <br/> f(a)*f(mid) <0 <br/> ?"}
